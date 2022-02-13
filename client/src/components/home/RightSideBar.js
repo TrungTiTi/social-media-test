@@ -40,16 +40,12 @@ const RightSideBar = () => {
             }
 
             <div style={{opacity: 0.5}} className="my-2" >
-                <a href="" target="_blank" rel="noreferrer"
-                style={{wordBreak: 'break-all'}} >
-                    https://
-                </a>
                 <small className="d-block">
                     Welcome to "VietNam"
                 </small>
 
                 <small>
-                   &copy; 2021 T&T VIET NAM
+                   &copy; 2022 T&T VIET NAM
                 </small>
             </div>
 
