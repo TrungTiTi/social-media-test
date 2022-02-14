@@ -37,6 +37,10 @@
 .header .menu .material-icons{
     font-size: 30px;
 }
+.header .menu .label-icons {
+    margin-top: 5px;
+    margin-left: 10px;
+}
 .header .menu .dropdown-menu{
     position: absolute;
     left: inherit;
@@ -48,9 +52,8 @@
 
 .header .menu .notify_length{
     position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 34%;
+    left: 21px;
     color: white;
     font-weight: bold;
     font-size: 10px;
