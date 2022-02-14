@@ -20,6 +20,7 @@ const Menu = () => {
     const isActive = (pn) => {
         if(pn === pathname) return 'active'
     }
+    console.log("notify", notify.data.length);
 
     return (
         <div className="menu">
@@ -27,25 +28,23 @@ const Menu = () => {
                 {
                     navLinks.map((link, index) => (
                         <li className={`nav-item px-2 ${isActive(link.path)}`} key={index}>
-                            <Link className="nav-link" to={link.path}>
+                            <Link className="nav-link" to={link.path} style={{display: "flex"}}>
                                 <span className="material-icons">{link.icon}</span>
-                                <span>{link.label}</span>
+                                <span className='label-icons'>{link.label}</span>
                             </Link>
                         </li>
                     ))
                 }
 
                 <li className="nav-item px-2 dropdown" style={{opacity: 1}} >
-                    <span className="nav-link position-relative" id="navbarDropdown" 
+                    <span className="nav-link position-relative" id="navbarDropdown" style={{display: "flex"}}
                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
                         <span className="material-icons" 
-                        style={{color: notify.data.length > 0 ? 'crimson' : ''}}>
+                        style={{marginRight: "10px", color: notify.data.length > 0 ? 'crimson' : ''}}>
                             favorite
                         </span>
-
                         <span className="notify_length">{notify.data.length}</span>
-
+                        Notifications
                     </span>
 
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown"
