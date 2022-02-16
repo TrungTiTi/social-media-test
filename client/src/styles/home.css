@@ -76,3 +76,9 @@
     transform: translate(5px, -5px);
     opacity: 0.9;
 }
+
+@media only screen and (max-width: 768px){
+    .home{
+      width: unset;
+    }
+  }

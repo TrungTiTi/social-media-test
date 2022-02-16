@@ -41,6 +41,12 @@ img {
   object-fit: cover;
 }
 
+@media only screen and (max-width: 768px){
+  .main{
+    display: block;
+  }
+}
+
 /* -------- AUTH ---------- */
 @import url("./auth.css");
 

@@ -9,7 +9,9 @@
     z-index: 2;
     box-shadow: 0 0 10px #ddd;
     background: #f8f9fa;
-    border: 1px solid rgb(0, 0, 0, .125);
+    border-right: 1px solid rgb(0, 0, 0, .125);
+    border-left: 1px solid rgb(0, 0, 0, .125);
+    
 }
 .header .navbar{
     display: block;
@@ -54,11 +56,15 @@
     position: absolute;
     top: 34%;
     left: 21px;
-    color: white;
+    color: coral;
     font-weight: bold;
     font-size: 10px;
 }
 
+.header .menu .nav-link{
+    display: flex;
+    /* justify-content: center; */
+}
 /* ---------- Header Search -------- */
 .header .search_form{
     position: relative;
@@ -113,3 +119,26 @@
     transform: translateY(-50%);
 }
 
+@media only screen and (max-width: 1200px){
+    .header .menu .nav-link{
+        display: flex;
+        justify-content: center;
+    }
+    .header .menu .label-icons{
+        display: none;
+    }
+    .header .menu .notify_lable{
+        display: none;
+    }
+    .header .menu .notify_length{
+        top: unset;
+        left: unset;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .header{
+      width: 100%;
+      height: unset;
+    }
+  }

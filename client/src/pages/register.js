@@ -35,7 +35,7 @@ const Register = () => {
     return (
         <>
             <div className='auth_bg'>
-                <img src='../5297298.jpg'></img>
+                <img src='../img.png'></img>
             </div>
             <div className="auth_page">
                 <form onSubmit={handleSubmit}>

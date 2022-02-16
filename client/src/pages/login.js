@@ -3,7 +3,6 @@ import { Link, useHistory } from 'react-router-dom'
 import { login } from '../redux/actions/authAction'
 import { useDispatch, useSelector } from 'react-redux'
 
-
 const Login = () => {
     const initialState = { email: '', password: '' }
     const [userData, setUserData] = useState(initialState)
@@ -32,12 +31,12 @@ const Login = () => {
     return (
         <>
             <div className='auth_bg'>
-                <img src='../5297298.jpg'></img>
+                <img src='../img.png'></img>
             </div>
             <div className="auth_page">
                 <form onSubmit={handleSubmit}>
                     <h3 className="text-uppercase text-center mb-4">T0C0T</h3>
-
+                    
                     <div className="form-group">
                         <label htmlFor="exampleInputEmail1">Email address</label>
                         <input type="email" className="form-control" id="exampleInputEmail1" name="email"

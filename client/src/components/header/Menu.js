@@ -5,11 +5,11 @@ import { logout } from '../../redux/actions/authAction'
 import { GLOBALTYPES } from '../../redux/actions/globalTypes'
 import Avatar from '../Avatar'
 import NotifyModal from '../NotifyModal'
-
+import NotificationsIcon from '@mui/icons-material/Notifications';
 const Menu = () => {
     const navLinks = [
         { label: 'Home', icon: 'home', path: '/'},
-        { label: 'Message', icon: 'near_me', path: '/message'},
+        { label: 'Message', icon: 'message', path: '/message'},
         { label: 'Discover', icon: 'explore', path: '/discover'}
     ]
 
@@ -39,12 +39,13 @@ const Menu = () => {
                 <li className="nav-item px-2 dropdown" style={{opacity: 1}} >
                     <span className="nav-link position-relative" id="navbarDropdown" style={{display: "flex"}}
                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span className="material-icons" 
+                        {/* <span className="material-icons" 
                         style={{marginRight: "10px", color: notify.data.length > 0 ? 'crimson' : ''}}>
                             favorite
-                        </span>
+                        </span> */}
+                        <NotificationsIcon style={{marginRight: "10px", color: notify.data.length > 0 ? 'crimson' : ''}}> </NotificationsIcon>
                         <span className="notify_length">{notify.data.length}</span>
-                        Notifications
+                        <span className='notify_lable'>Notifications</span>
                     </span>
 
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown"
